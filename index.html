@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/Font-Awesome-3.2.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <!--<link rel="stylesheet" href="./assets/css/bootstrap-theme.min.css">-->
+</head>
+<body>
+
+<!--S=搜索栏-->
+<nav class="navbar navbar-default" role="navigation">
+    <div class="col-md-1"></div>
+    <div class="container-fluid col-md-10 text-center">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">优书网</a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#">所有书单</a></li>
+                <li><a href="#">小说评论</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        论坛 <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">jmeter</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">另一个分离的链接</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="输入书名/作者名/用户/书单">
+                        </div>
+                        <button type="submit" class="btn btn-default">搜索</button>
+                    </form>
+                </li>
+                <li class="login" style="right: 0;position: absolute">
+                    <a href="#">登录</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</nav>
+<!--E=搜索栏-->
+<!--S=书籍分类-->
+<div style="height: 30px;line-height:30px;background-color: #3573AF">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 text-center">
+        <div class="col-md-1"><a href="#">玄幻奇幻</a></div>
+        <div class="col-md-1"><a href="#">仙侠武侠</a></div>
+        <div class="col-md-1"><a href="#">现代都是</a></div>
+        <div class="col-md-1"><a href="#">历史军事</a></div>
+        <div class="col-md-1"><a href="#">游戏竞技</a></div>
+        <div class="col-md-1"><a href="#">科幻灵幻</a></div>
+        <div class="col-md-1"><a href="#">同人短篇</a></div>
+        <div class="col-md-1"><a href="#">古代言情</a></div>
+        <div class="col-md-1"><a href="#">现代言情</a></div>
+        <div class="col-md-1"><a href="#">玄幻言情</a></div>
+        <div class="col-md-1"><a href="#">文学艺术</a></div>
+        <div class="col-md-1"><a href="#">②次元</a></div>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+<!--E=书籍分类-->
+<!--S=主题内容-->
+<div class="main col-md-12">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 text-center content">
+        <!--S=公告-->
+        <div class="col-md-4 notice">
+            <div class="list-group">
+                <div href="#" class="list-group-item header">
+                    优书公告
+                </div>
+                <div class="list-group-item">
+                    <p class="list-group-item-text text-left">
+                        <span class="notice-category">翻译</span><a href="#" class="notice-content">量大管饱的仙粮干草铺</a>
+                    </p>
+                    <p class="list-group-item-text text-left">
+                        <span class="notice-category">翻译</span><a href="#" class="notice-content">厂长2017粮草见证</a>
+                    </p>
+                    <p class="list-group-item-text text-left">
+                        <span class="notice-category">翻译</span><a href="#" class="notice-content">厂长2017粮草见证</a>
+                    </p>
+                    <p class="list-group-item-text text-left">
+                        <span class="notice-category">翻译</span><a href="#" class="notice-content">厂长2017粮草见证</a>
+                    </p>
+                    <p class="list-group-item-text text-left">
+                        <span class="notice-category">书单</span><a href="#" class="notice-content">唐纳德阅读杂记</a>
+                    </p>
+                </div>
+                <div class="list-group-item bottom">
+                    <button class="btn btn-primary btn-sm">我要推书 >></button>
+                </div>
+            </div>
+        </div>
+        <!--E=公告-->
+        <!--S=最新更新-->
+        <div class="col-md-8 latest-books">
+            <div class="list-group">
+                <div class="list-group-item">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>书名</th>
+                            <th>作者</th>
+                            <th>章节</th>
+                            <th>更新</th>
+                            <th>阅读</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><a href="#" class="book-title">最初的寻道者</a></td>
+                            <td>橘子伯爵</td>
+                            <td>第二百七十三章 白费功夫</td>
+                            <td>4小时前</td>
+                            <td><a href="#" class="add-bookRack">加入书架</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="book-title">武道宗师</a></td>
+                            <td>爱潜水的乌贼</td>
+                            <td>今天两更在晚上</td>
+                            <td>8小时前</td>
+                            <td><a href="#" class="add-bookRack">加入书架</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="list-group-item bottom">
+                    <a href="#">点击进入书架</a>
+                </div>
+            </div>
+        </div>
+        <!--E=最新更新-->
+        <div class="col-md-12"></div>
+        <!--S=大神新作推荐-->
+        <div class="col-md-4 recommend-books">
+            <div class="list-group">
+                <div href="#" class="list-group-item text-left">
+                    大神新作推荐
+                </div>
+                <div class="list-group-item">
+                    <p class="list-group-item-text text-left">
+                        <a href="#" class="content">月关 《逍遥游》</a>
+                    </p>
+                    <p class="list-group-item-text text-left">
+                        <a href="#" class="content">七月新番 《战国明月》</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--E=大神新作推荐-->
+        <!--S=轮播-->
+        <div class="col-md-8 ads">
+            <div id="myCarousel" class="carousel slide">
+                <!-- 轮播（Carousel）指标 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="./assets/img/demo01.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                        <img src="./assets/img/demo02.jpg" alt="Second slide">
+                    </div>
+                    <div class="item">
+                        <img src="./assets/img/demo03.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <!-- 轮播（Carousel）导航 -->
+                <a class="carousel-control left" href="#myCarousel"
+                   data-slide="prev">&lsaquo;
+                </a>
+                <a class="carousel-control right" href="#myCarousel"
+                   data-slide="next">&rsaquo;
+                </a>
+            </div>
+        </div>
+        <!--E=轮播-->
+        <div class="col-md-12" style="margin-top: 20px"></div>
+        <!--S=新书-->
+        <div class="col-md-4 new-books">
+            <div class="list-group">
+                <div href="#" class="list-group-item header text-left">
+                    新书 <span class="text-right">字数(万)</span>
+                </div>
+                <div class="book-lists">
+                    <div class="list-group-item">
+                        <p class="list-group-item-text text-left">
+                            <a href="#" class="book-name">战国明月</a><span class="book-num">4.8</span>
+                        </p>
+                    </div>
+                    <div class="list-group-item">
+                        <p class="list-group-item-text text-left">
+                            <a href="#" class="book-name">战国明月</a><span class="book-num">4.8</span>
+                        </p>
+                    </div>
+                    <div class="list-group-item">
+                        <p class="list-group-item-text text-left">
+                            <a href="#" class="book-name">战国明月</a><span class="book-num">4.8</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--E=新书-->
+        <!--S=最新书评-->
+        <div class="col-md-8 text-center latest-comments">
+            <h4 class="text-left">最新书评</h4>
+            <hr>
+            <ul class="media-list ys-comments">
+                <li class="media ys-comments-left">
+                    <div style="margin-right:5px;">
+                        <div class="col-md-1">
+                            <a href="#" target="_blank">
+                                <img src="./assets/img/user/avatar/noavatar_small.jpg">
+                            </a>
+                        </div>
+                        <div class="col-md-11">
+                            <div class="media-body" style="text-align: left">
+                                <h5 class="media-heading">
+                                    <a href="#" target="_blank">zkr</a>
+                                    <small style="margin-left:1em;">17 分钟前评了
+                                        <span class="num2star">
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star-half"></i>
+                                            <i class=" icon-star-empty"></i>
+                                        </span>
+                                    </small>
+                                </h5>
+                                <div class="ys-comments-message"><p>
+                                    刚看开头其实有点意思，比那个门派养成日志智商靠谱，但是整体剧情特别平淡。哪怕某些剧情能看出来是高潮也让人感觉阳痿。金手指比较小，吸收法宝能力，变成消耗品，还有点化建筑，增加修炼能力。 </p>
+                                    <small>&nbsp;(本书评来自于<a target="_blank" href="#">《天下第一掌门》</a>)</small>
+                                </div>
+                                <div class="ys-comments-btns pull-right btn-group">
+                                    <button type="button" style="width:50%;" class="btn btn-default">
+                                        <i></i>&nbsp;喜欢<span></span></button>
+                                    <button type="button" style="width:50%;" class="btn btn-default">
+                                        <i></i>&nbsp;评论<span></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="media ys-comments-left">
+                    <div style="margin-right:5px;">
+                        <div class="col-md-1">
+                            <a href="#" target="_blank">
+                                <img src="./assets/img/user/avatar/noavatar_small.jpg">
+                            </a>
+                        </div>
+                        <div class="col-md-11">
+                            <div class="media-body" style="text-align: left">
+                                <h5 class="media-heading">
+                                    <a href="#" target="_blank">zkr</a>
+                                    <small style="margin-left:1em;">17 分钟前评了
+                                        <span class="num2star">
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star-half"></i>
+                                            <i class=" icon-star-empty"></i>
+                                        </span>
+                                    </small>
+                                </h5>
+                                <div class="ys-comments-message"><p>
+                                    刚看开头其实有点意思，比那个门派养成日志智商靠谱，但是整体剧情特别平淡。哪怕某些剧情能看出来是高潮也让人感觉阳痿。金手指比较小，吸收法宝能力，变成消耗品，还有点化建筑，增加修炼能力。 </p>
+                                    <small>&nbsp;(本书评来自于<a target="_blank" href="#">《天下第一掌门》</a>)</small>
+                                </div>
+                                <div class="ys-comments-btns pull-right btn-group">
+                                    <button type="button" style="width:50%;" class="btn btn-default">
+                                        <i></i>&nbsp;喜欢<span></span></button>
+                                    <button type="button" style="width:50%;" class="btn btn-default">
+                                        <i></i>&nbsp;评论<span></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button class="form-control" style="background-color: #EFF6FA;color: #338ECF;">点击查看更多</button>
+        </div>
+        <!--E=最新书评-->
+        <!--S=友情链接-->
+        <div class="col-md-12 close-url text-left" style="height: 50px;">
+            <hr>
+            友情链接：<a href="#">龙空论坛</a>
+            <a href="#">lisam博客</a>
+            <hr>
+            <hr>
+        </div>
+        <!--E=友情链接-->
+    </div>
+    <div class="col-md-1"></div>
+</div>
+<!--E=主题内容-->
+
+
+</body>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+</html>

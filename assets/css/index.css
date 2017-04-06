@@ -1,0 +1,130 @@
+.main {
+    margin-top: 15px;
+}
+
+.main .content .notice .header {
+    height: 40px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.main .content .notice .bottom {
+    height: 50px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.main .content .notice .notice-category {
+    font-weight: bold;
+    color: red;
+    border: none;
+    padding-right: 8px;
+    border-right: 1px solid #ccc;
+}
+
+.main .content .notice a {
+    color: #337ab7;
+    text-decoration: none;
+    padding-left: 8px;
+}
+
+.latest-books table tr td {
+    text-align: left
+}
+
+.main .content .latest-books .bottom {
+    background-color: #F5F5F5;
+}
+
+.main .content .latest-books .bottom a {
+    text-decoration: none;
+    color: #00b3ee;
+}
+
+.main .content .latest-books .add-bookRack {
+    border: 1px solid #337AB7;
+    background-color: #337AB7;
+    padding: 3px 5px 3px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.main .content .latest-books .book-title {
+    color: #337AB7;
+}
+
+.main .content .latest-books a:hover {
+    color: red;
+}
+
+.content .recommend-books .content {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+.content .ads {
+    box-shadow: #999999;
+}
+
+.content .ads .item img {
+    height: 180px;
+}
+
+.new-books .header {
+    background-color: #4596D3;
+    color: #ffffff;
+}
+
+.new-books .header span {
+    right: 0;
+    position: absolute;
+    margin-right: 10px;
+}
+
+.new-books .book-name {
+    color: #338ECF;
+    text-decoration: none;
+}
+
+.new-books .book-lists .list-group-item {
+    border-right: none;
+    border-left: none
+}
+
+.new-books .book-lists .book-num {
+    position: absolute;
+    right: 0;
+    padding-right: 5px;
+}
+.media-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.latest-comments ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.latest-comments .num2star .icon-star,.icon-star-half {
+    color:#4D7BD6
+}
+
+.latest-comments a {
+    color: #338ECF;
+    text-decoration: none;
+}
+
+.close-url a{
+    color: #338ECF;
+    margin-right: 20px
+}
