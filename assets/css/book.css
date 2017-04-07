@@ -56,7 +56,17 @@
     color: #338ECF;
 }
 
-.intro-mark .icon-star, .icon-star-empty, .icon-star-half {
+.intro-mark .mark-star .icon-star {
+    font-size: 20px;
+    color: #4D7BD6;
+}
+
+.intro-mark .mark-star .icon-star-empty {
+    font-size: 20px;
+    color: #4D7BD6;
+}
+
+.intro-mark .mark-star .icon-star-half {
     font-size: 20px;
     color: #4D7BD6;
 }
@@ -125,9 +135,9 @@
     -webkit-padding-start: 40px;
 }
 
-.comments .num2star .icon-star,.icon-star-half,.icon-star-empty {
-    color:#4D7BD6;
-    font-size:10px;
+.comments .num2star .icon-star, .icon-star-half, .icon-star-empty {
+    color: #4D7BD6;
+    font-size: 10px;
 }
 
 .comments a {
