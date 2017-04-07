@@ -1,0 +1,20 @@
+.main {
+    margin-top: 15px;
+}
+
+.close-url a {
+    color: #338ECF;
+    margin-right: 20px
+}
+
+.content .book-category a {
+    color: #338ECF;
+}
+
+.book-category {
+    padding: 0 0 20px 0;
+    border: 1px solid #eeeeee;
+    box-shadow: 1px 1px 1px 1px #eeeeee;
+    border-right: 4px solid #88C6E5;
+    border-left: 4px solid #88C6E5
+}
