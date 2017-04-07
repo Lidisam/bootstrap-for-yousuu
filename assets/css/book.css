@@ -1,0 +1,136 @@
+.main {
+    margin-top: 15px;
+}
+
+.close-url a {
+    color: #338ECF;
+    margin-right: 20px
+}
+
+.category .category-name {
+    border-radius: 10px 10px 10px 10px;
+    padding: 2px 8px 2px 8px;
+    background-color: #5BC0DE;
+    color: #fff;
+}
+
+.category .category-edit {
+    margin-left: 10px;
+    color: #5986C4;
+}
+
+.intro {
+    padding: 0 0 0 0;
+}
+
+.intro .intro-title {
+    height: 30px;
+    line-height: 30px;
+    margin-top: 8px
+}
+
+.intro .intro-title span {
+    font-size: 18px;
+    font-weight: bold
+}
+
+.intro .media .intro-img {
+    width: 113px;
+}
+
+.intro .media .intro-img a img {
+    width: 113px;
+    height: 150px;
+}
+
+.intro .media .intro-img a button {
+    width: 113px;
+    border-radius: 0 0 5px 5px
+}
+
+.intro .intro-content ul li {
+    margin-bottom: 10px;
+}
+
+.intro .intro-content ul li a {
+    color: #338ECF;
+}
+
+.intro-mark .icon-star, .icon-star-empty, .icon-star-half {
+    font-size: 20px;
+    color: #4D7BD6;
+}
+
+.intro-mark .mark-star span.star-marks {
+    font-size: 20px;
+    color: #4D7BD6;
+}
+
+.star-progress {
+    margin-top: 20px;
+}
+
+.star-progress .progress {
+    margin-bottom: 8px;
+}
+
+.add-marks {
+    height: 40px;
+    line-height: 40px;
+    margin-right: 15px
+}
+
+.op-button {
+    margin-top: 25px;
+    clear: both;
+}
+
+.op-button button {
+    float: left
+}
+
+.book-intro {
+    clear: left;
+    margin-top: 20px
+}
+
+.book-intro .panel-heading {
+    background-color: #337AB7;
+    color: #ffffff;
+}
+
+.book-intro .panel-heading a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+.media-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.comments ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.comments .num2star .icon-star,.icon-star-half,.icon-star-empty {
+    color:#4D7BD6;
+    font-size:10px;
+}
+
+.comments a {
+    color: #338ECF;
+    text-decoration: none;
+}

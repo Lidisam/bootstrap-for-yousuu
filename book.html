@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>评论站</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/Font-Awesome-3.2.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/book.css">
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <!--<link rel="stylesheet" href="./assets/css/bootstrap-theme.min.css">-->
+</head>
+<body>
+
+<!--S=搜索栏-->
+<nav class="navbar navbar-default" role="navigation">
+    <div class="col-md-1"></div>
+    <div class="container-fluid col-md-10 text-center">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">优书网</a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#">所有书单</a></li>
+                <li><a href="#">小说评论</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        论坛 <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">jmeter</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">另一个分离的链接</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="输入书名/作者名/用户/书单">
+                        </div>
+                        <button type="submit" class="btn btn-default">搜索</button>
+                    </form>
+                </li>
+                <li class="login" style="right: 0;position: absolute">
+                    <a href="#">登录</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</nav>
+<!--E=搜索栏-->
+<!--S=主题内容-->
+<div class="main col-md-12">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 text-center content">
+        <!--S=标签-->
+        <div class="col-md-12 text-left category">
+            <a href="#" class="category-name">仙侠武侠</a>
+            <a href="#" class="category-edit">修改标签</a>
+        </div>
+        <!--E=标签-->
+        <!--S=内容介绍-->
+        <div class="col-md-7 intro">
+            <div class="text-left intro-title">
+                <span>盗天仙途</span>
+            </div>
+            <div class="media">
+                <div class="intro-img col-md-1">
+                    <a href="#">
+                        <img class="text-left" src="./assets/img/book/2017-04-07/180.jpg" alt="">
+                        <button class="btn btn-primary btn-block">开始阅读</button>
+                    </a>
+                </div>
+                <div class="col-md-8 intro-content">
+                    <ul class="list-unstyled list-sm text-left">
+                        <li>作者：<a href="#">荆柯守</a></li>
+                        <li>字数：661153字</li>
+                        <li>章节数: 214章</li>
+                        <li>来自: 起点中文网</li>
+                        <li>更新时间: 17/04/07 10:11</li>
+                        <li>最新章节: 第二百十章 蔡远振</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 text-right intro-mark">
+            <div class="mark-star">
+                <i class="icon-star"></i>
+                <i class="icon-star"></i>
+                <i class="icon-star"></i>
+                <i class="icon-star-half"></i>
+                <i class="icon-star-empty"></i>
+                <span class="star-marks">7.0</span>
+                <small>本书共有445个评价</small>
+            </div>
+            <div class="star-progress">
+                <div class="progress">
+                    <div style="width: 22.8%;" class="progress-bar progress-bar-primate">22.8%</div>
+                </div>
+                <div class="progress">
+                    <div style="width: 35.0%;" class="progress-bar progress-bar-primate">35.0%</div>
+                </div>
+                <div class="progress">
+                    <div style="width: 21.5%;" class="progress-bar progress-bar-primate">21.5%</div>
+                </div>
+                <div class="progress">
+                    <div style="width: 5.4%;" class="progress-bar progress-bar-primate">5.4%</div>
+                </div>
+                <div class="progress">
+                    <div style="width: 15.3%;" class="progress-bar progress-bar-primate">15.3%</div>
+                </div>
+            </div>
+            <div class=" pull-right add-marks">
+                <span style="font-size:18px">我的评分：</span>
+            <span style="font-size:21px;" class="text-right" id="star">
+                <i style="color: rgb(204, 204, 204);" class="icon-star" id="star1"></i>
+                <i style="color: rgb(204, 204, 204);" class="icon-star" id="star2"></i>
+                <i style="color: rgb(204, 204, 204);" class="icon-star" id="star3"></i>
+                <i style="color: rgb(204, 204, 204);" class="icon-star" id="star4"></i>
+                <i style="color: rgb(204, 204, 204);" class="icon-star" id="star5"></i>
+            </span>
+                <span style="font-size:18px;width:56px;display:inline-block;" id="star_desc">未评分</span>
+            </div>
+        </div>
+        <!--E=内容介绍-->
+        <div class="col-md-12"></div>
+        <!--S=按钮操作-->
+        <div class="col-md-12 op-button">
+            <button class="sokk-readstate-btn btn btn-default" style="border-radius: 5px 0 0 5px;">追看本书</button>
+            <button class="sokk-readstate-btn btn btn-default" style="border-radius: 0 0 0 0;">养肥本书</button>
+            <button class="sokk-readstate-btn btn btn-default" style="border-radius: 0 5px 5px 0;">已看本书</button>
+            <button class="sokk-readstate-btn btn btn-default" style="margin-left: 15px">不看本书</button>
+            <button class="sokk-readstate-btn btn btn-default"
+                    style="margin-left: 15px;background-color: #F0AD4E;color: #ffffff;">加入推书单
+            </button>
+            <button class="sokk-readstate-btn btn btn-default" style="margin-left: 15px">写书评</button>
+        </div>
+        <!--E=按钮操作-->
+        <!--S=本书简介-->
+        <div class="text-left col-md-12 book-intro">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                        <h4 class="panel-title">
+                            本书简介
+                        </h4>
+                    </a>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        福地产生地仙，洞天来往天仙，我有梅花一株，盗取一线天机！
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--E=本书简介-->
+        <!--S=评论-->
+        <div class="col-md-12 comments">
+            <ul class="media-list ys-comments">
+                <li class="media ys-comments-left">
+                    <div style="margin-right:5px;">
+                        <div class="col-md-1">
+                            <a href="#" target="_blank">
+                                <img src="./assets/img/user/avatar/noavatar_small.jpg">
+                            </a>
+                        </div>
+                        <div class="col-md-11">
+                            <div class="media-body" style="text-align: left">
+                                <h5 class="media-heading">
+                                    <a href="#" target="_blank">zkr</a>
+                                    <small style="margin-left:1em;">17 分钟前评了
+                                        <span class="num2star">
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star-half"></i>
+                                            <i class=" icon-star-empty"></i>
+                                        </span>
+                                    </small>
+                                </h5>
+                                <div class="ys-comments-message"><p>
+                                    刚看开头其实有点意思，比那个门派养成日志智商靠谱，但是整体剧情特别平淡。哪怕某些剧情能看出来是高潮也让人感觉阳痿。金手指比较小，吸收法宝能力，变成消耗品，还有点化建筑，增加修炼能力。 </p>
+                                    <small>&nbsp;(本书评来自于<a target="_blank" href="#">《天下第一掌门》</a>)</small>
+                                </div>
+                                <div class="ys-comments-btns pull-right btn-group">
+                                    <button type="button" style="width:50%;" class="btn btn-default">
+                                        <i class="icon-heart-empty"></i>&nbsp;喜欢<span></span></button>
+                                    <button type="button" style="width:50%;" class="btn btn-default">
+                                        <i class="icon-reply"></i>&nbsp;评论<span></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <hr>
+                <li class="media ys-comments-left">
+                    <div style="margin-right:5px;">
+                        <div class="col-md-1">
+                            <a href="#" target="_blank">
+                                <img src="./assets/img/user/avatar/noavatar_small.jpg">
+                            </a>
+                        </div>
+                        <div class="col-md-11">
+                            <div class="media-body" style="text-align: left">
+                                <h5 class="media-heading">
+                                    <a href="#" target="_blank">zkr</a>
+                                    <small style="margin-left:1em;">17 分钟前评了
+                                        <span class="num2star">
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star-half"></i>
+                                            <i class=" icon-star-empty"></i>
+                                        </span>
+                                    </small>
+                                </h5>
+                                <div class="ys-comments-message"><p>
+                                    刚看开头其实有点意思，比那个门派养成日志智商靠谱，但是整体剧情特别平淡。哪怕某些剧情能看出来是高潮也让人感觉阳痿。金手指比较小，吸收法宝能力，变成消耗品，还有点化建筑，增加修炼能力。 </p>
+                                    <small>&nbsp;(本书评来自于<a target="_blank" href="#">《天下第一掌门》</a>)</small>
+                                </div>
+                                <div class="ys-comments-btns pull-right btn-group">
+                                    <button type="button" style="width:50%;" class="btn btn-default">
+                                        <i class="icon-heart-empty"></i>&nbsp;喜欢<span></span></button>
+                                    <button type="button" style="width:50%;" class="btn btn-default">
+                                        <i class="icon-reply"></i>&nbsp;评论<span></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <hr>
+                <li class="media ys-comments-left">
+                    <div style="margin-right:5px;">
+                        <div class="col-md-1">
+                            <a href="#" target="_blank">
+                                <img src="./assets/img/user/avatar/noavatar_small.jpg">
+                            </a>
+                        </div>
+                        <div class="col-md-11">
+                            <div class="media-body" style="text-align: left">
+                                <h5 class="media-heading">
+                                    <a href="#" target="_blank">zkr</a>
+                                    <small style="margin-left:1em;">17 分钟前评了
+                                        <span class="num2star">
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star-half"></i>
+                                            <i class=" icon-star-empty"></i>
+                                        </span>
+                                    </small>
+                                </h5>
+                                <div class="ys-comments-message"><p>
+                                    刚看开头其实有点意思，比那个门派养成日志智商靠谱，但是整体剧情特别平淡。哪怕某些剧情能看出来是高潮也让人感觉阳痿。金手指比较小，吸收法宝能力，变成消耗品，还有点化建筑，增加修炼能力。 </p>
+                                    <small>&nbsp;(本书评来自于<a target="_blank" href="#">《天下第一掌门》</a>)</small>
+                                </div>
+                                <div class="ys-comments-btns pull-right btn-group">
+                                    <button type="button" style="width:50%;" class="btn btn-default">
+                                        <i class="icon-heart-empty"></i>&nbsp;喜欢<span></span></button>
+                                    <button type="button" style="width:50%;" class="btn btn-default">
+                                        <i class="icon-reply"></i>&nbsp;评论<span></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <hr>
+                <li class="media ys-comments-left">
+                    <div style="margin-right:5px;">
+                        <div class="col-md-1">
+                            <a href="#" target="_blank">
+                                <img src="./assets/img/user/avatar/noavatar_small.jpg">
+                            </a>
+                        </div>
+                        <div class="col-md-11">
+                            <div class="media-body" style="text-align: left">
+                                <h5 class="media-heading">
+                                    <a href="#" target="_blank">zkr</a>
+                                    <small style="margin-left:1em;">17 分钟前评了
+                                        <span class="num2star">
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star"></i>
+                                            <i class="icon-star-half"></i>
+                                            <i class=" icon-star-empty"></i>
+                                        </span>
+                                    </small>
+                                </h5>
+                                <div class="ys-comments-message"><p>
+                                    刚看开头其实有点意思，比那个门派养成日志智商靠谱，但是整体剧情特别平淡。哪怕某些剧情能看出来是高潮也让人感觉阳痿。金手指比较小，吸收法宝能力，变成消耗品，还有点化建筑，增加修炼能力。 </p>
+                                    <small>&nbsp;(本书评来自于<a target="_blank" href="#">《天下第一掌门》</a>)</small>
+                                </div>
+                                <div class="ys-comments-btns pull-right btn-group">
+                                    <button type="button" style="width:50%;" class="btn btn-default">
+                                        <i class="icon-heart-empty"></i>&nbsp;喜欢<span></span></button>
+                                    <button type="button" style="width:50%;" class="btn btn-default">
+                                        <i class="icon-reply"></i>&nbsp;评论<span></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <hr>
+            </ul>
+        </div>
+        <!--E=评论-->
+        <!--S=友情链接-->
+        <div class="col-md-12 close-url text-left" style="height: 50px;">
+            <hr>
+            友情链接：<a href="#">龙空论坛</a>
+            <a href="#">lisam博客</a>
+            <hr>
+            <hr>
+        </div>
+        <!--E=友情链接-->
+    </div>
+    <div class="col-md-1"></div>
+</div>
+<!--E=主题内容-->
+</body>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+</html>

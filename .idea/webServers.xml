@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ff22b147-3146-47a7-aaee-3dc315eb8352" name="锐霸前端" url="http://119.29.8.170">
+        <fileTransfer host="119.29.8.170" port="22" privateKey="D:\server_key\rui\skey-bp4lid0f.ppk" rootFolder="/data/wwwroot/default/ui" accessType="SFTP" username="root" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
