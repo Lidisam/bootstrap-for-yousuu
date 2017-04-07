@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>书籍分类</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/Font-Awesome-3.2.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/book.css">
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <!--<link rel="stylesheet" href="./assets/css/bootstrap-theme.min.css">-->
+</head>
+<body>
+
+<!--S=搜索栏-->
+<nav class="navbar navbar-default" role="navigation">
+    <div class="col-md-1"></div>
+    <div class="container-fluid col-md-10 text-center">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">优书网</a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#">所有书单</a></li>
+                <li><a href="#">小说评论</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        论坛 <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">jmeter</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">另一个分离的链接</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="输入书名/作者名/用户/书单">
+                        </div>
+                        <button type="submit" class="btn btn-default">搜索</button>
+                    </form>
+                </li>
+                <li class="login" style="right: 0;position: absolute">
+                    <a href="#">登录</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</nav>
+<!--E=搜索栏-->
+<!--S=主题内容-->
+<div class="main col-md-12">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 text-center content">
+
+        <!--S=友情链接-->
+        <div class="col-md-12 close-url text-left" style="height: 50px;">
+            <hr>
+            友情链接：<a href="#">龙空论坛</a>
+            <a href="#">lisam博客</a>
+            <hr>
+            <hr>
+        </div>
+        <!--E=友情链接-->
+    </div>
+    <div class="col-md-1"></div>
+</div>
+<!--E=主题内容-->
+</body>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+</html>
