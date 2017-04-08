@@ -1,0 +1,45 @@
+.main {
+    margin-top: 15px;
+}
+
+.close-url a {
+    color: #338ECF;
+    margin-right: 20px
+}
+
+.books .intro-img {
+    width: 113px;
+}
+
+.books .intro-img a img {
+    width: 100px;
+    height: 150px;
+}
+
+.books .col-md-8 {
+    color: #666666;
+}
+
+.books .col-md-8 div {
+    padding-left: 15px;
+    margin-bottom: 1px;
+}
+
+.books .col-md-8 a {
+    padding-left: 15px;
+    color: #337ABD;
+    text-decoration: none;
+}
+
+.books .col-md-8 button {
+    height: 28px;
+    font-size: 10px
+}
+
+.books .books-main {
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px 0 #cccccc;
+    padding: 10px 2px 10px 2px;
+    margin-bottom: 10px;
+    text-align: center;
+}
