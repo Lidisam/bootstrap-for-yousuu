@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>评论站</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/Font-Awesome-3.2.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/register.css">
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <!--<link rel="stylesheet" href="./assets/css/bootstrap-theme.min.css">-->
+</head>
+<body>
+
+<!--S=搜索栏-->
+<nav class="navbar navbar-default" role="navigation">
+    <div class="col-md-1"></div>
+    <div class="container-fluid col-md-10 text-center">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">优书网</a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#">所有书单</a></li>
+                <li><a href="#">小说评论</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        论坛 <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">jmeter</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">另一个分离的链接</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <form class="navbar-form navbar-left" role="search" action="./search.html">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="输入书名/作者名/用户/书单">
+                        </div>
+                        <button type="submit" class="btn btn-default">搜索</button>
+                    </form>
+                </li>
+                <li class="login" style="right: 0;position: absolute">
+                    <a href="#" id="login">登录</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</nav>
+<!--E=搜索栏-->
+<!--S=主题内容-->
+<div class="main col-md-12">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 text-center content">
+        <!--S=注册-->
+        <div class="col-md-2"></div>
+        <div class="col-md-8 register-main">
+            <div class="form-group">
+                <div class="col-md-12">
+                    <div style="padding:10px;border-radius:1px;background-color: #D9EDF7;" class="bg-success text-left">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;欢迎你注册
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <form action="#">
+                <div class="form-group">
+                    <label for="inputUserName" class="col-sm-2 control-label">用户名</label>
+                    <div class="col-sm-10">
+                        <input id="inputUserName" type="text" placeholder="用户名可以为中文" name="username"
+                               class="form-control"  style="margin-bottom: 18px">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword1" class="col-sm-2 control-label">密码</label>
+                    <div class="col-sm-10">
+                        <input id="inputPassword1" style="margin-bottom: 18px" type="password" name="password1" class="form-control"></div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword2" class="col-sm-2 control-label">确认密码</label>
+                    <div class="col-sm-10">
+                        <input id="inputPassword2" style="margin-bottom: 18px" type="password" name="password2" class="form-control"></div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail" class="col-sm-2 control-label">注册邮箱</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <input id="inputEmail" type="email" placeholder="请输入注册邮箱" name="email"
+                                   class="form-control">
+                            <span class="input-group-btn"><a onclick="ys.signup.sendMail()"
+                                                             class="btn btn-info">发送邮箱验证码</a></span></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div id="emailInfo" style="padding:10px;border-radius:5px;" class="bg-success">
+                            点击右方的“发送邮箱验证码”来获取对应邮箱的验证码
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmailCode" class="col-sm-2 control-label">邮箱验证码</label>
+                    <div class="col-sm-10">
+                        <input id="inputEmailCode" type="text" placeholder="请输入邮箱收到的验证码"
+                               name="emailcode" style="margin-bottom: 18px" class="form-control"></div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10 ">
+                        <button class="btn btn-primary form-control">提交注册</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-2"></div>
+        <!--E=注册-->
+        <!--S=友情链接-->
+        <div class="col-md-12 close-url text-left" style="height: 50px;">
+            <hr>
+            友情链接：<a href="#">龙空论坛</a>
+            <a href="#">lisam博客</a>
+            <hr>
+            <hr>
+        </div>
+        <!--E=友情链接-->
+    </div>
+    <div class="col-md-1"></div>
+</div>
+<!--E=主题内容-->
+<div id="login_content" style="display: none">
+    <div class="col-md-12" style="padding: 20px 25px 0 25px">
+        <form action="#" method="post">
+            <input type="text" class="form-control" style="margin-bottom: 15px" placeholder="请输入你的账号">
+            <input type="password" class="form-control" style="margin-bottom: 15px" placeholder="请输入你的密码">
+            <input type="submit" value="登录" class="form-control btn btn-primary">
+            <hr>
+            <a href="./register.html" type="button" class="form-control btn btn-success" style="color: #ffffff;">还没有账号？立即注册</a>
+        </form>
+    </div>
+
+</div>
+
+
+</body>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/layer/layer.js"></script>
+<script>
+    $(function () {
+        $("#login").click(function () {
+            layer.open({
+                type: 1,
+                title: '登录',
+                area: ['320px', '320px'], //宽高
+                content: $("#login_content").html()
+            });
+        });
+    });
+
+</script>
+</html>
